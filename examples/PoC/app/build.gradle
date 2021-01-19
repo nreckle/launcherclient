@@ -23,6 +23,10 @@ android {
     sourceSets {
         main.java.srcDirs += '../../../src/'
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
